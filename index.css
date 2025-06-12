@@ -1,0 +1,30 @@
+.settings
+{
+    width: 110vw;
+    height: 30vh;
+   
+}
+
+.title
+{
+    position: absolute;
+    top: clamp(-1rem, -2vw, -1rem);
+    left: clamp(-3rem, -3vw, -3rem);
+ 
+}
+
+.text-position
+{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: clamp(-30rem,-20vw, -30rem);
+
+
+}
+
+.text-style
+{
+    font-size: clamp(7rem, 15vw, 8rem);
+}
+
