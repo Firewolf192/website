@@ -1,6 +1,6 @@
 .settings
 {
-    width: 110vw;
+    width: 102vw;
     height: 30vh;
    
 }
@@ -10,6 +10,7 @@
     position: absolute;
     top: clamp(-1rem, -2vw, -1rem);
     left: clamp(-3rem, -3vw, -3rem);
+  
  
 }
 
@@ -17,15 +18,37 @@
 {
     display: flex;
     justify-content: center;
+    
  
-
 
 }
 
 .text-style
 {
-    font-size: clamp(6rem, 8vw, 6rem);
     position: absolute;
-    top: clamp(1vw, 1vw, 1vw);    
+    top: clamp(1vw, 1vw, 1vw);
+    font-size: clamp(6rem, 8vw, 6rem);
+    color: aliceblue;
+    font-family: Georgia;
+    margin-right: 10vw; 
+   
 }
+
+
+@media (max-width:587px){
+    .text-style
+    {
+        font-size: clamp(5rem, 5vw, 5rem);
+        margin-left: 5vw;
+    }
+}
+
+@media (max-width:1000px){
+    .text-style
+    {
+        margin-left: clamp(4rem, 10vw, 10rem);
+    }
+}
+
+
 
