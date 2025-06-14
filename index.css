@@ -5,6 +5,15 @@
    
 }
 
+html
+{
+    background-image: url(bg.jpg);
+    background-size: cover;
+
+
+   
+}
+
 .title
 {
     position: relative;
@@ -52,6 +61,9 @@
     display: flex;
     justify-content: center;
     gap: 1vw;
+    color: rgb(255, 255, 255);
+
+    
 
 }
 
@@ -91,8 +103,73 @@
     {
         font-size: clamp(3rem, 5vw, 3rem);
     }
+
 }
 
+
+#t1
+{   
+    transition: opacity 0.5s ease;
+    opacity: 1;
+    
+
+}
+
+#t1.hidden
+{
+    opacity: 0;
+}
+
+#t2
+{   
+    transition: opacity 0.5s ease;
+    opacity: 1;
+    
+
+}
+
+#t2.hidden
+{
+    opacity: 0;
+}
+
+#t3
+{   
+    transition: opacity 0.5s ease;
+    opacity: 1;
+    
+
+}
+
+#t3.hidden
+{
+    opacity: 0;
+}
+
+
+.table-position
+{
+    display: flex;
+    justify-content: center;
+  
+}
+
+.table-style
+{
+    width: clamp(20rem, 50vw, 60rem);
+    border-radius: 40px;
+    box-shadow: 0vw 0vw 2vw white;
+}
+
+.caption-style
+{
+    display: block;
+}
+
+.color
+{
+    color: aqua;
+}
 
 @media (max-width:1000px){
     .pictures
@@ -114,4 +191,10 @@
         height: clamp(10rem, 25vh, 30rem);
     }
 
+    .table-style
+    {
+        margin-left: 10vw;
+    }
+
 }
+
