@@ -32,3 +32,29 @@ claus.addEventListener("click", () => {
     disappearAnimation(clausText);
 
 })
+
+
+
+let menu = document.querySelector("#m");
+let button = document.querySelector("#b");
+let but = document.querySelector("#but");
+
+let animation = true;
+
+but.addEventListener("click", () => {
+  if (animation) {
+    menu.classList.remove("animation3")
+    menu.classList.add("animation");
+    button.classList.add("animation2");
+    animation = false;
+
+  } else {
+    menu.classList.remove("animation");
+    menu.classList.add("animation3")
+    button.classList.remove("animation2");
+    animation = true;
+  }
+
+});
+
+

@@ -10,8 +10,81 @@ html
     background-image: url(bg.jpg);
     background-size: cover;
 
-
    
+}
+
+.button
+{
+   
+    position: relative;
+    left: 0px;
+    top: 100vh;
+    
+}
+
+.button button
+{
+    height: 300px;
+}
+.box
+{
+    display: flex;
+    position: fixed;
+    left: -300px;
+    top: -50px;
+    
+  
+}
+
+.animation
+{
+    animation: slideIn 1s ease-out forwards;
+}
+
+.animation2
+{
+    animation: slide 1s ease-out forwards;
+}
+
+.animation3
+{
+    animation: slide-out 1s ease-out forwards;
+}
+
+.animation4
+{
+    animation: slide-out2 1s ease-out forwards;
+}
+
+.box img
+{
+    width: clamp(15rem, 15vw, 15rem);
+    height: 103vh;
+}
+
+@keyframes slideIn{
+
+    to{
+        left: -40px;
+    }
+}
+
+@keyframes slide{
+    to{
+        left: 230px;
+    }
+}
+
+@keyframes slide-out{
+    to{
+        left: -300px;
+    }
+}
+
+@keyframes slide-out2{
+    to{
+        left: 0px;
+    }
 }
 
 .title
@@ -91,6 +164,38 @@ html
     
 }
 
+.table-size
+{
+    width: clamp(90rem, 60vw, 50rem);
+    height: 50vh;
+    border: none;
+ 
+
+  
+}
+
+.table-size td
+{
+    border: solid clamp(0.1rem, 0.5vw, 1rem) black;
+}
+
+.table-size tr 
+{
+    border: solid clamp(0.1rem, 0.5vw, 1rem) black;
+}
+
+.table-size th 
+{
+    border: solid clamp(0.1rem, 0.5vw, 1rem) black;
+}
+
+.size
+{
+    text-align: center;
+    font-size: clamp(2rem, 3vw, 3rem);
+    color: white;
+}
+
 @media (max-width:587px){
     .text-style
     {
@@ -104,7 +209,19 @@ html
         font-size: clamp(3rem, 5vw, 3rem);
     }
 
+    .table-size
+    {
+        width: clamp(30rem, 40vw, 50rem);
+        height: 10vw;
+    }
+    .size
+    {
+        font-size: clamp(1rem, 3vw, 5rem);
+    }
+
 }
+
+
 
 
 #t1
@@ -169,6 +286,7 @@ html
 .color
 {
     color: aqua;
+    margin-left: 5vw;
 }
 
 @media (max-width:1000px){
