@@ -241,7 +241,7 @@ html
     border: solid 10px turquoise;
     border-radius: 30%;
     cursor: pointer;
-    transition: all 0.5s ease;
+    transition: width 0.5s ease-out, height 0.5s ease-out;
 }
 
 .images-style:hover
@@ -381,6 +381,8 @@ html
     {
         margin-left: 10vw;
     }
+
+    
 
 }
 
