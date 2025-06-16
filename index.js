@@ -39,22 +39,39 @@ let menu = document.querySelector("#m");
 let button = document.querySelector("#b");
 let but = document.querySelector("#but");
 
-let animation = true;
+let transition = document.querySelector("#o")
+
+let animation = true
+
+let textAnimation = document.querySelector("#t")
 
 but.addEventListener("click", () => {
-  if (animation) {
-    menu.classList.remove("animation3")
-    menu.classList.add("animation");
-    button.classList.add("animation2");
-    animation = false;
 
-  } else {
-    menu.classList.remove("animation");
-    menu.classList.add("animation3")
-    button.classList.remove("animation2");
-    animation = true;
-  }
+    if(animation){
+      textAnimation.classList.remove("t-animation-out")
+      textAnimation.classList.add("t-animation")
+      button.classList.remove("animation4")
+      menu.classList.remove("animation3")
+      menu.classList.add("animation");
+      button.classList.add("animation2");
+      transition.textContent = "slide in"
+      animation = false;
+      
+    }
 
+    else if(animation === false)
+    {
+      menu.classList.remove("animation");
+      menu.classList.add("animation3");
+      button.classList.add("animation4");
+      textAnimation.classList.remove("t-animation")
+      textAnimation.classList.add("t-animation-out")
+      transition.textContent = "slide out"
+      animation = true;
+    };
+  
 });
+
+
 
 

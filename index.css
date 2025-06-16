@@ -25,6 +25,16 @@ html
 .button button
 {
     height: 300px;
+    cursor: pointer;
+    border-radius: 50px;
+    text-decoration: none;
+    border: none;
+    transition: all 0.5s ease;
+}
+
+.button button:hover
+{
+    background-color: turquoise;
 }
 .box
 {
@@ -64,27 +74,111 @@ html
 
 @keyframes slideIn{
 
-    to{
+    0%{
+        left: -200px;
+    }
+
+    100%{
         left: -40px;
     }
 }
 
 @keyframes slide{
-    to{
-        left: 230px;
+    100%{
+        left: 10vw;
     }
 }
 
 @keyframes slide-out{
-    to{
+    0%{
+        left: -40px;
+    }
+    100%{
         left: -300px;
     }
 }
 
 @keyframes slide-out2{
-    to{
+    0%{
+        left: 10vw;
+    }
+    100%{
+        left: 0vw;
+    }
+}
+
+@keyframes text-animation{
+    0%{
+        left: -300px;
+    }
+
+    100%{
+        left: -10px;
+    }
+}
+
+@keyframes text-animation-out{
+    0%{
         left: 0px;
     }
+
+    100%{
+        left: -300px;
+    }
+}
+
+@media(max-width:570px){
+    @keyframes slide-out2 {
+        0%{
+            left: 230px;
+        }
+
+        100%{
+            left: 10vw;
+        }
+        
+    }
+
+    @keyframes slide {
+      
+        100%
+        {
+            left: 230px;
+        }
+    }
+}
+
+
+.text a
+{
+    color: red;
+}
+
+.text
+{
+    position: relative;
+    font-size: clamp(3rem, 2vw, 2rem);
+    list-style: none;
+    left: -300px;
+    color: white;
+
+}
+
+
+.t-animation
+{
+    animation: text-animation 1s ease-out forwards;
+}
+
+.t-animation-out
+{
+    animation: text-animation-out 1s ease-out forwards;
+}
+
+
+.button span
+{
+    font-size: 20px;
 }
 
 .title
@@ -195,32 +289,6 @@ html
     font-size: clamp(2rem, 3vw, 3rem);
     color: white;
 }
-
-@media (max-width:587px){
-    .text-style
-    {
-        font-size: clamp(5rem, 5vw, 5rem);
-        margin-left: clamp(1rem, 10vw, 15rem);
-
-    }
-
-    #s
-    {
-        font-size: clamp(3rem, 5vw, 3rem);
-    }
-
-    .table-size
-    {
-        width: clamp(30rem, 40vw, 50rem);
-        height: 10vw;
-    }
-    .size
-    {
-        font-size: clamp(1rem, 3vw, 5rem);
-    }
-
-}
-
 
 
 
